@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Janaki Montessori School - Home</title>
+  <style>
+    /* Reset */
+    * {
+      margin: 0; padding: 0; box-sizing: border-box;
+    }
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      line-height: 1.6;
+      background: #f0f4f8;
+      color: #333;
+    }
+    header {
+      background: #0077c8;
+      color: #fff;
+      padding: 15px 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+    header .logo {
+      font-size: 1.8rem;
+      font-weight: bold;
+      letter-spacing: 2px;
+      cursor: default;
+    }
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+    }
+    nav ul li a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: 600;
+      padding: 6px 10px;
+      border-radius: 4px;
+      transition: background 0.3s ease;
+    }
+    nav ul li a:hover {
+      background: #005fa3;
+    }
+    .hero {
+      background: url('https://images.unsplash.com/photo-1503676260728-1c00da094a0b?auto=format&fit=crop&w=1470&q=80') center/cover no-repeat;
+      height: 400px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      text-shadow: 0 0 10px rgba(0,0,0,0.7);
+      font-size: 2.5rem;
+      font-weight: 700;
+      text-align: center;
+      padding: 0 20px;
+    }
+    main {
+      max-width: 1000px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+    section {
+      margin-bottom: 50px;
+    }
+    section h2 {
+      color: #0077c8;
+      margin-bottom: 15px;
+      border-bottom: 3px solid #0077c8;
+      padding-bottom: 8px;
+      font-size: 1.8rem;
+    }
+    .about p,
+    .vision p,
+    .message p {
+      font-size: 1.1rem;
+      line-height: 1.7;
+      color: #444;
+    }
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit,minmax(180px,1fr));
+      gap: 15px;
+    }
+    .gallery img {
+      width: 100%;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+      cursor: pointer;
+      transition: transform 0.3s ease;
+    }
+    .gallery img:hover {
+      transform: scale(1.05);
+    }
+    .contact-info {
+      background: #0077c8;
+      color: white;
+      padding: 20px;
+      border-radius: 8px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      gap: 20px;
+    }
+    .contact-info div {
+      flex: 1 1 250px;
+    }
+    .contact-info h3 {
+      margin-bottom: 10px;
+    }
+    .social-links a {
+      display: inline-block;
+      margin-right: 15px;
+      color: white;
+      font-size: 1.5rem;
+      text-decoration: none;
+      transition: color 0.3s ease;
+    }
+    .social-links a:hover {
+      color: #ffd700;
+    }
+    footer {
+      background: #004b80;
+      color: white;
+      text-align: center;
+      padding: 15px 20px;
+      font-size: 0.9rem;
+    }
+
+    /* Responsive */
+    @media(max-width: 600px) {
+      nav ul {
+        flex-direction: column;
+        gap: 10px;
+      }
+      .hero {
+        font-size: 1.6rem;
+        height: 280px;
+      }
+      .contact-info {
+        flex-direction: column;
+        text-align: center;
+      }
+    }
+  </style>
+  <!-- Font Awesome for social icons -->
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+<header>
+  <div class="logo">Janaki Montessori</div>
+  <nav>
+    <ul>
+      <li><a href="#about">About Us</a></li>
+      <li><a href="#vision">Vision</a></li>
+      <li><a href="#message">Principal's Message</a></li>
+      <li><a href="#gallery">Gallery</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+<section class="hero">
+  Welcome to Janaki Montessori School
+</section>
+
+<main>
+
+  <section id="about" class="about">
+    <h2>About Us</h2>
+    <p>
+      Janaki Montessori School is a child-centered, progressive educational institution located in Itahari-17, Pakali, Sunsari.
+      Established with the aim of nurturing young minds in a loving and inspiring environment, the school follows Montessori principles that promote independence, creativity, and holistic development.
+      We provide a safe, clean, and joyful learning space for children to explore, discover, and grow intellectually, emotionally, and socially.
+      Our dedicated team of trained educators ensures that each child receives personalized attention and encouragement in their learning journey.
+    </p>
+  </section>
+
+  <section id="vision" class="vision">
+    <h2>Our Vision</h2>
+    <p>
+      To become a leading early childhood educational institution in Nepal by fostering curiosity, independence, and a lifelong love for learning in every child.
+    </p>
+  </section>
+
+  <section id="message" class="message">
+    <h2>Message from the Principal</h2>
+    <p>
+      <strong>Dear Parents and Guardians,</strong><br><br>
+      Welcome to Janaki Montessori School!<br><br>
+      At our school, we strongly believe that every child is special and deserves a nurturing environment to grow and thrive.
+      Our goal is to provide a learning space where children feel loved, respected, and empowered to express themselves freely.<br><br>
+      We follow the Montessori method, which emphasizes self-directed learning, hands-on experiences, and the development of the whole child.
+      Our experienced and caring teachers are committed to guiding your child through their early steps of academic and personal growth.<br><br>
+      Thank you for trusting us with your child’s foundational education. Together, let’s shape a bright and confident future for them.<br><br>
+      Warm regards,<br>
+      <strong>Mamata Magar</strong><br>
+      Principal<br>
+      Janaki Montessori School
+    </p>
+  </section>
+
+  <section id="gallery" class="gallery-section">
+    <h2>Gallery</h2>
+    <div class="gallery">
+      <img src="https://images.unsplash.com/photo-1524995997946-a1c2e315a42f?auto=format&fit=crop&w=500&q=80" alt="Student Activity 1" />
+      <img src="https://images.unsplash.com/photo-1507668077129-56e32842fceb?auto=format&fit=crop&w=500&q=80" alt="Student Activity 2" />
+      <img src="https://images.unsplash.com/photo-1503676260728-1c00da094a0b?auto=format&fit=crop&w=500&q=80" alt="School Event" />
+      <img src="https://images.unsplash.com/photo-1499951360447-b19be8fe80f5?auto=format&fit=crop&w=500&q=80" alt="Classroom" />
+    </div>
+  </section>
+
+  <section id="contact" class="contact-info">
+    <div>
+      <h3>Contact Us</h3>
+      <p>Itahari-17, Pakali, Sunsari, Nepal</p>
+      <p>Phone: +977 9842460646</p>
+      <p>Email: janaki.montessori.itg@gmail.com</p>
+    </div>
+    <div>
+      <h3>Follow Us</h3>
+      <div class="social-links">
+        <a href="https://www.facebook.com/JanakiMontessori" target="_blank" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+        <a href="https://wa.me/9842460646" target="_blank" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+        <a href="https://www.tiktok.com/@janakimontessori" target="_blank" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  &copy; 2025 Janaki Montessori School. All rights reserved.
+</footer>
+
+</body>
+</html>
